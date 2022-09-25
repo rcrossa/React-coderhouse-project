@@ -12,7 +12,7 @@ const NavbarMenu = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="" variant="" className='navbar'>
             <Container>
-                <Navbar.Brand href="home">
+                <Navbar.Brand href="/">
                     <Figure >
                         <Figure.Image
                             className='figure'
@@ -24,7 +24,7 @@ const NavbarMenu = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='toggle' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="home" className='link'>Home</Nav.Link>
+                        <Nav.Link href="/" className='link'>Home</Nav.Link>
                         <Nav.Link href="product" className='link'>Product</Nav.Link>
                         <Nav.Link href="details" className='link'>Details</Nav.Link>
                         <Nav.Link href="contact" className='link'>Contact</Nav.Link>
