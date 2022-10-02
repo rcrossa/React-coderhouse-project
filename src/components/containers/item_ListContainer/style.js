@@ -1,11 +1,7 @@
 export const styles = {
     section: {
-        padding: '0em'
-    },
-    container: {
-        padding: '0em',
-        display: 'flex',
-        gap: '1rem'
+        padding: '0',
+        margin: '0'
     },
     h1: {
         padding: '0.3em',
@@ -13,9 +9,6 @@ export const styles = {
 
     },
     Item_List: {
-        padding: '1em',
-        display: 'flex',
-        height: '10rem',
-        width: 'auto'
+        // padding: '0em 0em 1em 0em'
     }
 }

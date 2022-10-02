@@ -1,29 +1,22 @@
-import React, { useState } from 'react';
-import { data } from '../../../data/index.js';
-import Container from 'react-bootstrap/Container';
-import Item_List from '../../item_List/index.js';
+import React, { useState, useEffect } from 'react';
+import { getProducts, products } from '../../../data/index.js';
+import ItemList from '../../item_List/index.js';
 import { styles } from './style';
 
 const ItemListContainer = () => {
-    const [datos, setdatos] = useState([]);
+    const [datos, setDatos] = useState([]);
 
-    const getData = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(setdatos(data))
-        }, 1000);
-        reject(console.log("Hay un problema."))
-    })
-
-    getData.then(console.log(result => console.log(result))).catch(error => console.log(error));
-
+    useEffect(() => {
+        getProducts()
+            .then((products) => setDatos(products))
+            .catch((error) => console.error(error));
+    }, []);
     return (
         <div style={styles.section}>
-            <Container >
-                <h1 style={styles.h1}>Tienda</h1>
-                <div style={styles.container}>
-                    <Item_List styles={styles.Item_List} products={datos} />
-                </div>
-            </Container>
+            <h1 style={styles.h1}>Tienda</h1>
+            <div style={styles.container}>
+                <ItemList styles={styles.Item_List} products={datos} />
+            </div>
         </div>
     );
 }
