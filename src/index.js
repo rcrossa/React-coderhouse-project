@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 const Root = ReactDOM.createRoot(document.getElementById('root'));
 Root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='react-coderhouse-project'>
       <App />
     </BrowserRouter>
   </React.StrictMode>
