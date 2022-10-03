@@ -25,10 +25,10 @@ const NavbarMenu = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='toggle' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/" className='link'>Home</Nav.Link>
+                        <Nav.Link as={Link} to='/' className='link'>Home</Nav.Link>
                         <Nav.Link as={Link} to='/category/tortas' className='link'>Tortas</Nav.Link>
-                        {/* <Nav.Link href="details" className='link'>Details</Nav.Link> */}
-                        {/* <Nav.Link href="contact" className='link'>Contact</Nav.Link> */}
+                        <Nav.Link as={Link} to='/category/galletitas' className='link'>Galletitas</Nav.Link>
+                        <Nav.Link as={Link} to='/category/alfajores' className='link'>Alfajores</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -11,14 +11,13 @@ const ItemCard = ({ product }) => {
                 <Card.Img variant="top" src={product.pictureUrl} className="imagen" />
                 <Card.Body className='democardbody'>
 
-                    <Card.Title><p className='demoTitle'> {product.name}</p></Card.Title>
-                    <Card.Text className='demoDescription'>{product.description}</Card.Text>
-                    <Card.Text className='demoPrice'>{product.price}</Card.Text>
-                    <button className='btn_count_less'> -</button>
-                    {product.quantity}
-                    <button className='btn_count_add'>+</button>
+                    <Card.Title><p className='demoTitle'> {product.title}</p></Card.Title>
+                    <Card.Text><p className='demoDescription'>{product.description}</p></Card.Text>
+                    <Card.Text><p className='demoPrice'>$ {product.price}</p></Card.Text>
                     <Card.Text>
-                        <Link to={`/item/${product.id}`}><button className='btn_add' >Ver detalle</button></Link>
+                        <Link to={`/item/${product.id}`}>
+                            <button className='btn_add' >Ver detalle</button>
+                        </Link>
                     </Card.Text>
                 </Card.Body>
             </Card>

@@ -7,10 +7,10 @@ import './style.css';
 
 const ItemList = ({ products }) => {
     return (
-        <Container>
+        <Container fluid='auto'>
             <Row className="itemList" >
                 {products.map((product) => (
-                    <Col className='columList' xs="6" sm="auto" md="auto" lg="auto">
+                    <Col className='columList' xs="8" sm="auto" md="auto" lg="auto">
                         <ItemCard key={product.id} product={product} />
                     </Col>
                 ))}

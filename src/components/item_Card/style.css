@@ -2,20 +2,45 @@
     width: 16rem;
     height: auto;
     margin: 0em 0em 1rem 0em;
+    border: solid #00438f;
 }
 
+.imagen {
+    /* width: 10em;
+    align-items: center; */
+}
+
+.imagen:hover {
+    -ms-transform: scale(1);
+    /* IE 9 */
+    -webkit-transform: scale(1.02);
+    /* Safari 3-8 */
+    transform: scale(1.02);
+}
 
 .democardbody {
     background-color: lightblue;
     padding: 3em;
-    height: 16rem;
+    height: 17.5rem;
 }
 
 .demoTitle {
     color: rgb(247, 247, 247);
-    font-size: large;
-    background-color: black;
+    font-size: 2rem;
+    font-weight: 600;
 }
+
+.demoDescription {
+    height: 2.5rem;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2em;
+}
+
+.demoPrice {}
+
 
 .btn_count_less {
     margin: 0em 0.5em 0em 0em;
