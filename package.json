@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/rcrossa/react-coderhouse-project",
+  "homepage": "https://rcrossa.github.io/react-coderhouse-project/",
   "eslintConfig": {
     "extends": [
       "react-app",
