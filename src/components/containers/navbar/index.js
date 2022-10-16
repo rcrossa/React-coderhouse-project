@@ -7,6 +7,8 @@ import Figure from 'react-bootstrap/Figure';
 import './style.css';
 import logo from '../../../assets/Untitled.webp';
 import { Link } from 'react-router-dom';
+import CardWidget from '../../cartWidget';
+
 
 
 const NavbarMenu = () => {
@@ -31,6 +33,7 @@ const NavbarMenu = () => {
                         <Nav.Link as={Link} to='/category/alfajores' className='link'>Alfajores</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
+                <CardWidget />
             </Container>
         </Navbar>
     );
