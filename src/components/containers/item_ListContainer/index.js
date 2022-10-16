@@ -19,6 +19,7 @@ const ItemListContainer = () => {
                 .catch((error) => console.warn(error));
         }
     }, [categoryId]);
+
     return (
         <div style={styles.section}>
             <h1 style={styles.h1}>Tienda</h1>
