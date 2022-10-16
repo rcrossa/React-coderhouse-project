@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -26,9 +25,7 @@ const app = initializeApp(firebaseConfig);
 const Root = ReactDOM.createRoot(document.getElementById('root'));
 Root.render(
   <React.StrictMode>
-    <BrowserRouter basename='/react-coderhouse-project/'>
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
 

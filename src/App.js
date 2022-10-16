@@ -6,8 +6,11 @@ import ItemListContainer from './components/containers/item_ListContainer';
 import ItemDetailsContainer from './components/itemDetail/ItemDetailsContainer';
 import Checkout from './components/checkout/Checkout';
 import Cart from './components/cart/Cart';
+import { FavoritosProvider } from './contexts/FavouritesContex';
+import { BrowserRouter } from 'react-router-dom';
+import CacheContext, { CacheProvider } from './contexts/CacheContext';
+import { CartProvider } from './contexts/CartContext';
 import { doc, getFirestore, getDoc, collection } from 'firebase/firestore';
-
 function App() {
   // acceso a un documento especifico
   // useEffect(() => {
@@ -56,16 +59,22 @@ function App() {
   // })
   return (
     <div className="App">
-      <>
-        <NavbarMenu />
-        <Routes>
-          <Route path='/' element={<ItemListContainer />} />
-          <Route path='/category/:categoryId' element={<ItemListContainer />} />
-          <Route path='/item/:id' element={<ItemDetailsContainer />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/checkout' element={<Checkout />} />
-        </Routes>
-      </>
+      <BrowserRouter basename='/react-coderhouse-project/'>
+        <CacheProvider>
+          <CartProvider>
+            <NavbarMenu />
+            <FavoritosProvider>
+              <Routes>
+                <Route path='/' element={<ItemListContainer />} />
+                <Route path='/category/:categoryId' element={<ItemListContainer />} />
+                <Route path='/item/:id' element={<ItemDetailsContainer />} />
+                <Route path='/cart' element={<Cart />} />
+                <Route path='/checkout' element={<Checkout />} />
+              </Routes>
+            </FavoritosProvider>
+          </CartProvider>
+        </CacheProvider>
+      </BrowserRouter>
     </div>
   );
 }
