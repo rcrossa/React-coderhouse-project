@@ -12,7 +12,7 @@ export const getAllProducts = () => {
                     id: doc.id,
                     ...doc.data()
                 }));
-            console.log(list);
+
             return list;
         })
         .catch(error => console.warn(error))
@@ -35,11 +35,18 @@ export const getProduct = (id) => {
 };
 
 export const getProductsByCategory = (categoryId) => {
+
     const database = getFirestore();
+
     const collectionReference = collection(database, 'items');
+
     const collectionQuery = query(collectionReference, where('category', '==', categoryId))
+
     return getDocs(collectionQuery)
         .then(snapshot => {
+            if (snapshot.size === 0)
+                return [];
+
             const list = snapshot
                 .docs
                 .map((doc) => ({

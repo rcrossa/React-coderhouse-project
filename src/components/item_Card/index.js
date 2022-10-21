@@ -11,9 +11,9 @@ const ItemCard = ({ product }) => {
                 <Card.Img variant="top" src={product.pictureUrl} className="imagen" />
                 <Card.Body className='democardbody'>
 
-                    <Card.Title><p className='demoTitle'> {product.title}</p></Card.Title>
-                    <Card.Text><p className='demoDescription'>{product.description}</p></Card.Text>
-                    <Card.Text><p className='demoPrice'>$ {product.price}</p></Card.Text>
+                    <Card.Title><span className='demoTitle'> {product.title}</span></Card.Title>
+                    <Card.Text><span className='demoDescription'>{product.description}</span></Card.Text>
+                    <Card.Text><span className='demoPrice'>$ {product.price}</span></Card.Text>
                     <Card.Text>
                         <Link to={`/item/${product.id}`}>
                             <button className='btn_add' >Ver detalle</button>

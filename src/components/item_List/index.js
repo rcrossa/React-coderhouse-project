@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './style.css';
 
-const ItemList = ({ products }) => {
+const ItemList = ({ products = [] }) => {
     return (
         <Container fluid='auto'>
             <Row className="itemList" >
