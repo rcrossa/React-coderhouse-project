@@ -15,7 +15,7 @@ const NavbarMenu = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="" variant="" className='navbar'>
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand as={Link} to='/' >
                     <Figure >
                         <Figure.Image
                             className='figure'
@@ -33,7 +33,7 @@ const NavbarMenu = () => {
                         <Nav.Link as={Link} to='/category/alfajores' className='link'>Alfajores</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-                <CardWidget />
+                <CardWidget className="cartWidget" />
             </Container>
         </Navbar>
     );

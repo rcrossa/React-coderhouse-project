@@ -13,6 +13,8 @@ This project was bootstrapped with:
 
 ### Demo
 
+![](https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ad42.appspot.com/o/Recording%202022-10-22%20at%2021.16.01-2.gif?alt=media&token=628243a2-e789-40ee-b388-428c914bb4e1)
+
 ## Directory tree structure
 
 - `/Components`

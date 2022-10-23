@@ -1,10 +1,9 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import './style.css'
+import './style.css';
 
 const ItemCard = ({ product }) => {
-
     return (
         <>
             <Card className='democard'>

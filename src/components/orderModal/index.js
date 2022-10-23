@@ -29,22 +29,22 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId }) => {
 
                     {!orderId && (
                         <div className='btnsucess'>
-                            <Button variant="secondary" onClick={onClose}>
+                            <Button className="btnCancelar" variant="secondary" onClick={onClose}>
                                 Cancelar
                             </Button>
-                            <Button variant="sucess" onClick={onBuy}>
+                            <Button className="btnComprar" variant="success" onClick={onBuy}>
                                 Comprar
                             </Button>
                         </div>
                     )}
                     {orderId && (
-                        <div className='btnsucess'>
-                            <Alert key="sucess" variant="sucess">
-                                [orderId]
+                        <div className='btnsuccess'>
+                            <Alert key="success" variant="success">
+                                Numero De Orden: {orderId}
                             </Alert>
 
                             <Link to='/'>
-                                <Button variant="sucess" onClick={onBuy}>
+                                <Button variant="success" onClick={onBuy}>
                                     Comprar de nuevo
                                 </Button>
                             </Link>
