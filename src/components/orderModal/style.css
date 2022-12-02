@@ -1,0 +1,10 @@
+.modalfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnCancelar,
+.btnComprar {
+    margin: 0.5rem;
+}

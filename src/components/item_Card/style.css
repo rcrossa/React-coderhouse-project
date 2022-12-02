@@ -1,0 +1,141 @@
+.democard {
+    width: 16rem;
+    height: auto;
+    margin: 0em 0em 1rem 0em;
+    border: solid #00438f;
+}
+
+.imagen {
+    /* width: 10em;
+    align-items: center; */
+}
+
+.imagen:hover {
+    -ms-transform: scale(1);
+    /* IE 9 */
+    -webkit-transform: scale(1.02);
+    /* Safari 3-8 */
+    transform: scale(1.02);
+}
+
+.democardbody {
+    background-color: lightblue;
+    padding: 3em;
+    height: 17.5rem;
+}
+
+.demoTitle {
+    color: rgb(247, 247, 247);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.demoDescription {
+    height: 2.5rem;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2em;
+}
+
+.demoPrice {}
+
+
+.btn_count_less {
+    margin: 0em 0.5em 0em 0em;
+    padding: 0.17rem 0.4rem 0.17rem 0.4rem;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px rgb(177, 177, 177);
+}
+
+.btn_count_add {
+    margin: 0em 0em 0em 0.5em;
+    padding: 0.13rem 0.35rem 0.13rem 0.34rem;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px rgb(177, 177, 177);
+}
+
+.btn_count_add:hover,
+.btn_count_less:hover {
+    background-color: #00f1f5;
+    box-shadow: 0 2px rgb(175, 159, 159);
+    transform: translateY(4px);
+}
+
+.btn_add {
+    padding: 15px 25px;
+    margin-top: 15px;
+    max-width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #00438f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+
+.btn_add:hover {
+    background-color: #00B5F5;
+    box-shadow: 0 2px rgb(175, 159, 159);
+    transform: translateY(4px);
+}
+
+@media screen and (max-width: 600px) {
+    .democard {
+        width: 11rem;
+        height: 25rem;
+    }
+
+    .democardbody {
+        background-color: lightblue;
+        height: 12rem;
+        padding: 0;
+    }
+
+    .btn_count_less {
+        margin: 0em 0.5em 0em 0em;
+        padding: 0.17rem 0.4rem 0.17rem 0.4rem;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 5px rgb(177, 177, 177);
+    }
+
+    .btn_count_add {
+        margin: 0em 0em 0em 0.5em;
+        padding: 0.13rem 0.35rem 0.13rem 0.34rem;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 5px rgb(177, 177, 177);
+    }
+
+    .btn_add {
+        padding: 15px 25px;
+        margin-top: 15px;
+        max-width: 250px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #00438f;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px #999;
+    }
+}
