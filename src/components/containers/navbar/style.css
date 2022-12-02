@@ -1,0 +1,38 @@
+.navbar {
+    background-color: black;
+}
+
+.figure {
+    height: 5em;
+    width: 5em;
+}
+
+.figure:hover {
+    background-color: rgba(255, 255, 224, 0.050);
+    transition: all 0.50s ease-out;
+}
+
+.toggle {
+
+    background-color: white;
+}
+
+.link {
+    color: white;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: lightyellow;
+    background-color: rgba(255, 255, 224, 0.226);
+    transition: all 0.50s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+    .cartWidget {}
+
+    .toggle {
+        margin: 0em;
+        padding: 0em;
+    }
+}
